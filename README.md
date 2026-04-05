@@ -11,3 +11,10 @@ This project follows a strict decoupled architecture to ensure logic is pure and
 2. Define the 'Vault' structs.
 3. Write the 'Brain' transforms.
 4. Plug it all into the 'Bouncer'.
+
+# ⚖️ Main 
+**Rule:** Connect, don't Compute.
+
+- **Job 1:** Authenticate and validate data from **IO**.
+- **Job 2:** Pass valid data to **Logic**.
+- **Job 3:** Take results from Logic and send to **Storage**.
